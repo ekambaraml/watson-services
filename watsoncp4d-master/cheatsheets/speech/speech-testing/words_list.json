@@ -1,0 +1,19 @@
+{
+  "words": [
+    {
+      "word":"F150",
+      "display_as": "F-150",
+      "sounds_like": ["F. one fifty"]
+    },
+    {
+      "word":"F-150",
+      "display_as": "F-150",
+      "sounds_like": ["F. one fifty"]
+    },
+    {
+      "word":"AT&T",
+      "display_as": "AT&T",
+      "sounds_like": [ "A. T. and T." ]
+    }
+  ]
+}

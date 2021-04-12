@@ -1,0 +1,24 @@
+*Issue:* After adding a corpora file to the language model, the status of the language model is “stuck” in the “being_processed” state and does not change to “analyzed”
+*How to verify the status of the language model:*
+curl --insecure -X GET -u “apikey:{api_key}” “https://9.42.134.134:443/speech-to-text/api/v1/customizations/{language_customization_id}/corpora/corpus1”
+When broken it looks like:
+{
+  “out_of_vocabulary_words”: 0,
+  “total_words”: 0,
+  “name”: “corpus1”,
+  “status”: “being_processed”
+}
+
+When working it looks like:
+{
+  “out_of_vocabulary_words”: 3,
+  “total_words”: 327,
+  “name”: “corpus1”,
+  “status”: “analyzed”
+}
+
+*Steps to resolve:*
+1. Get the STT customization pod name by running: `kubectl get pods`
+2. Check the logs: `kubectl logs <name-of-stt-customization-pod>`, if there are db connection exceptions
+3. This command will restart the pod: `kubectl delete pod <name-of-stt-customization-pod>`
+4. After the pod restarts, the model should automatically process the previously uploaded corpora file and once it is processed, move it to the “analyzed” state

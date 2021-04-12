@@ -1,0 +1,27 @@
+(JSON)
+In computing, JavaScript Object Notation or JSON is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value).
+JSON is a very common data format used for asynchronous browser/server communication, including as a replacement for XML in some AJAX-style systems.
+JSON objects are written in key/value pairs.
+It is common for JSON objects to be used in web applications instead of xml.
+JSON objects are common when using Watson products.
+There are several programming patterns that are common when using JSON Objects.
+It was derived from JavaScript, but as of 2017 many programming languages include code to generate and parse JSON format data.
+JSON objects are good at showing hierarchy in data.
+Douglas Crockford originally specified the JSON format in the early 2000s.
+(HTTP GET)
+The GET method requests a representation of the specified resource.
+Requests using a GET request should only retrieve data and should have no other effect.
+A GET request can be cached.
+An HTTP GET request will remain in the browser history.
+To use a GET request, try running a CURL command from the command line.
+(OPENWHISK)
+The OpenWhisk serverless architecture accelerates development as a set of small, distinct, and independent actions.
+By abstracting away infrastructure, OpenWhisk frees members of small teams to rapidly work on different pieces of code simultaneously, keeping the overall focus on creating user experiences customers want.
+OpenWhisk is serverless, using business rules to bind events, triggers, and actions to each other.
+OpenWhisk actions run automatically only when needed.
+OpenWhisk has a serverless architecture which promotes quickly, scalably creating and modifying action sequences to meet the evolving demands of mobile-driven user experience.
+(ID)
+IBM uses an internal ID system for its employees.
+Boise, ID, is a city in the US.
+Idaho, state abbreviation ID, is known for their potatoes.
+ID systems are a type of "something you have" or "something you know" security.
